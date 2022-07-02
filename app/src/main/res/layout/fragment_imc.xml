@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="edu.pablorios.myimcv4.model.FragmentImc">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/activity_main"
+        tools:context="edu.pablorios.myimcv4.MainActivity">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:text="@string/peso"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="@string/alt"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+        <EditText
+            android:id="@+id/n1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="-10dp"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:singleLine="true"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/textView"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+
+        <EditText
+            android:id="@+id/n2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="center"
+            android:inputType="number"
+            android:singleLine="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/n1"
+            app:layout_constraintTop_toBottomOf="@+id/n1"
+            tools:ignore="SpeakableTextPresentCheck" />
+
+        <RadioGroup
+            android:id="@+id/opciones_sexo"
+            android:layout_width="184dp"
+            android:layout_height="51dp"
+
+            android:layout_marginStart="-5dp"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:orientation="horizontal"
+            app:layout_constraintStart_toStartOf="@+id/textView2"
+            app:layout_constraintTop_toBottomOf="@+id/textView2">
+
+
+            <RadioButton
+                android:id="@+id/radio_masculino"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginEnd="0dp"
+                android:checked="true"
+                android:text="@string/hombre" />
+
+            <RadioButton
+                android:id="@+id/radio_femenino"
+                android:layout_width="99dp"
+                android:layout_height="match_parent"
+                android:checked="false"
+                android:text="@string/mujer" />
+        </RadioGroup>
+        <Button
+            android:id="@+id/btCalc"
+            android:layout_width="410dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="455dp"
+            android:text="@string/calcular"
+            android:clickable="true"
+            app:layout_constraintBottom_toBottomOf="@+id/tTot"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/tTot"
+            android:layout_width="410dp"
+            android:layout_height="500dp"
+            android:layout_marginTop="200dp"
+            android:background="@color/gray"
+            android:gravity="center_horizontal"
+            android:paddingVertical="160dp"
+            android:textSize="80sp"
+            android:textStyle="bold"
+
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.476"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tRes"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center_horizontal"
+            android:text=""
+            android:textSize="20sp"
+            android:layout_marginBottom="0dp"
+            android:background="@color/white"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:id="@+id/tvKg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/kg"
+            android:textSize="21sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/n1"
+            app:layout_constraintTop_toTopOf="@+id/n1" />
+
+        <TextView
+            android:id="@+id/tvCM"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/cm"
+            android:textSize="21sp"
+            android:textStyle="italic"
+            app:layout_constraintStart_toEndOf="@+id/n2"
+            app:layout_constraintTop_toBottomOf="@+id/n1" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

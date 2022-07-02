@@ -1,0 +1,59 @@
+<resources>
+
+    <!-- Títulos de aplicación -->
+    <string name="app_name">MyIMCv4</string>
+    <string name="app_name2">Histórico</string>
+    <string name="imc">IMC</string>
+
+    <!-- Labels para las vistas -->
+    <string name="peso"> Peso</string>
+    <string name="alt">Altura</string>
+    <string name="mujer">Mujer</string>
+    <string name="hombre">Hombre</string>
+    <string name="calcular">Calcular</string>
+    <string name="historico">Historico</string>
+    <string name="tipo">Tipo</string>
+    <string name="sexo">Sexo</string>
+    <string name="delgado">Delgado</string>
+    <string name="delgada">Delgada</string>
+    <string name="normal">Normal</string>
+    <string name="sobrepeso">Sobrepeso</string>
+    <string name="obesidad">Obesidad</string>
+    <string name="imc_mostar">IMC</string>
+    <string name="mes">Mes</string>
+    <string name="d">D</string>
+    <string name="a_o">Año</string>
+
+    <!-- Strings para código .kt -->
+    <string name="filename">registro.txt</string>
+    <string name="msg_correct">La información se ha registrado en el histórico.</string>
+    <string name="msg_correct2">Se ha eliminado el registro.</string>
+    <string name="alertaNoRegistro">No hay ningún registro guardado.</string>
+    <string name="alertaNoDatos">Los campos Peso y Altura no deben estar vacíos para realizar el cálculo.</string>
+    <string name="dialog">¿Deseas guardar la información obtenida para el historico?</string>
+    <string name="dialogBorrar">¿Estás segudo de eliminar este registro?</string>
+    <string name="msg_cancel">La información no ha quedado registrada.</string>
+    <string name="msg_cancel2">Cancelado.</string>
+    <string name="ok">ACEPTAR</string>
+    <string name="cancelar">CANCELAR</string>
+    <string name="kg">kg</string>
+    <string name="cm">cm</string>
+
+
+    <!-- Strings de los meses -->
+    <string-array name="meses">
+        <item>Enero</item>
+        <item>Febrero</item>
+        <item>Marzo</item>
+        <item>Abril</item>
+        <item>Mayo</item>
+        <item>Junio</item>
+        <item>Julio</item>
+        <item>Agosto</item>
+        <item>Septiembre</item>
+        <item>Octubre</item>
+        <item>Noviembre</item>
+        <item>Diciembre</item>
+    </string-array>
+
+</resources>
